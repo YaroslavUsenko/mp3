@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MP3</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="display-wrapper" style="display: none">
+        <div class="status-bar">
+          <div class="volume-indicator">
+            <i class="fa-solid fa-volume-high"></i>
+            <span class="volume-value"></span>
+          </div>
+          <div class="song-number" style="display: none"></div>
+          <div class="battery">
+            <span class="battery-value"></span>
+            <i class="fa-solid fa-battery-full fa-xl"></i>
+          </div>
+        </div>
+        <div class="workspace">
+          <div class="options" style="display: none">
+            <div class="button-song-player">Play song</div>
+            <div class="button-song-list">Show songs</div>
+            <div class="button-song-add">Add song</div>
+            <div class="button-song-remove">Remove song</div>
+          </div>
+          <div class="song-player" style="display: none">
+            <i class="fa-solid fa-music"></i>
+            <div class="song-update">
+              <div class="song-name"></div>
+            </div>
+            <div class="time-scale">
+              <div class="slider-container">
+                <div class="slider"></div>
+              </div>
+              <div class="song-timer"></div>
+            </div>
+          </div>
+          <div class="song-list" style="display: none">
+            <ul></ul>
+          </div>
+          <div class="song-add" style="display: none">
+            <i class="fa-brands fa-chrome"></i>
+            <input type="text" name="add-song-input" id="add-song-input" />
+            <button class="add-song-button">Add</button>
+          </div>
+          <div class="song-remove" style="display: none">
+            <i class="fa-solid fa-trash"></i>
+            <input
+              type="text"
+              name="remove-song-input"
+              id="remove-song-input"
+            />
+            <button class="remove-song-button">Remove</button>
+          </div>
+        </div>
+      </div>
+      <div class="display-off" style="display: block"></div>
+      <div class="controller">
+        <button class="button-power button">
+          <i class="fa-solid fa-power-off fa-2xl"></i>
+        </button>
+        <button class="button-menu button">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </button>
+        <button class="volume-increase button">
+          <i class="fa-solid fa-plus fa-2xl"></i>
+        </button>
+        <button class="next-song button">
+          <i class="fa-solid fa-forward fa-2xl"></i>
+        </button>
+        <button class="volume-decrease button">
+          <i class="fa-solid fa-minus fa-2xl"></i>
+        </button>
+        <button class="previous-song button">
+          <i class="fa-solid fa-backward fa-2xl"></i>
+        </button>
+        <button class="play button">
+          <i class="fa-solid fa-play fa-2xl"></i>
+          <i class="fa-solid fa-pause fa-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/createMP3.js"></script>
+    <script src="scripts/hide_display.js"></script>
+    <script src="scripts/generate_gradient.js"></script>
+    <script src="scripts/battery.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/power.js"></script>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/volume.js"></script>
+    <script src="scripts/display_player_functions.js"></script>
+    <script src="scripts/display_player.js"></script>
+    <script src="scripts/display_append_song.js"></script>
+    <script src="scripts/display_remove_song.js"></script>
+  </body>
+</html>
